@@ -2,7 +2,6 @@ import { Message } from "../typings";
 import ChatInput from "./ChatInput";
 import MessageList from "./MessageList";
 import { getServerSession } from "next-auth";
-import ChatLists from "./ChatLists";
 
 async function HomePage() {
   const session = await getServerSession();
