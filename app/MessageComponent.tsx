@@ -25,7 +25,7 @@ function MessageComponent({ message }: Props) {
           className="rounded-full mx-2"
           height={10}
           width={40}
-          src={message.profilePic}
+          src={message.profilePic || "https://links.papareact.com/jne"}
           alt="Profile Picture"
           style={{ height: "auto", width: "auto" }}
           priority

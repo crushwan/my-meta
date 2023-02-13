@@ -6,6 +6,7 @@ module.exports = {
       "links.papareact.com",
       "scontent.fkul2-4.fna.fbcdn.net",
       "platform-lookaside.fbsbx.com",
+      "lh3.googleusercontent.com",
     ],
   },
   experimental: {

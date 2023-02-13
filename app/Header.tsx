@@ -18,7 +18,7 @@ function Header({ session }: Props) {
               height={10}
               width={50}
               /* @ts-ignore */
-              src={session?.user?.image!}
+              src={session?.user?.image! || "https://links.papareact.com/jne"}
               alt="Profile Picture"
               style={{ height: "auto", width: "auto" }}
             />
