@@ -3,6 +3,7 @@ import Header from "./Header";
 import { SessionProvider } from "./SessionProvider";
 import { getServerSession } from "next-auth";
 import { authOptions } from "../pages/api/auth/[...nextauth]";
+import LoginPage from "./LoginPage";
 
 export default async function RootLayout({
   children,
@@ -16,8 +17,14 @@ export default async function RootLayout({
       <head />
       <body>
         <SessionProvider session={session}>
-          <Header session={session} />
-          {children}
+          {!session ? (
+            <LoginPage />
+          ) : (
+            <>
+              <Header session={session} />
+              {children}
+            </>
+          )}
         </SessionProvider>
       </body>
     </html>
