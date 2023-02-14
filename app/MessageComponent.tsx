@@ -55,7 +55,7 @@ function MessageComponent({ message }: Props) {
               isUser && "text-right"
             }`}
           >
-            <TimeAgo date={new Date(message.created_at)} />
+            {/* <TimeAgo date={new Date(message.created_at)} /> */}
           </p>
         </div>
       </div>
