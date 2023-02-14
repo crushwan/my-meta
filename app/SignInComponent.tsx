@@ -13,12 +13,12 @@ function SignInComponent({ providers }: Props) {
           <button
             className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2
             px-4 rounded"
-            onClick={() =>
-              signIn(provider.id, {
-                callbackUrl:
-                  `${process.env.NEXTAUTH_URL}/callback` ||
-                  "http://localhost:3000",
-              })
+            onClick={
+              () => signIn(provider.id)
+              // signIn(provider.id, {
+              //   callbackUrl:
+              //     process.env.NEXTAUTH_URL || "http://localhost:3000",
+              // })
             }
           >
             Sign in with {provider.name}
