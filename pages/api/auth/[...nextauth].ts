@@ -13,7 +13,7 @@ export const authOptions = {
     //   clientSecret: process.env.FACEBOOK_CLIENT_SECRET!,
     // }),
   ],
-  // secret: process.env.NEXTAUTH_SECRET!,
+  secret: process.env.NEXTAUTH_SECRET!,
   // pages: {
   //   signIn: '/auth/login',
   // }
