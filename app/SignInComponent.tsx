@@ -16,7 +16,7 @@ function SignInComponent({ providers }: Props) {
             onClick={() =>
               signIn(provider.id, {
                 callbackUrl:
-                  `${process.env.NEXTAUTH_URL}//api/auth/callback/google` ||
+                  `${process.env.NEXTAUTH_URL}/api/auth/callback/google` ||
                   "http://localhost:3000",
               })
             }
