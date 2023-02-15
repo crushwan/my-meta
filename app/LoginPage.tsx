@@ -18,7 +18,11 @@ function Login() {
 
       <button
         className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-        onClick={() => signIn("facebook")}
+        onClick={() =>
+          signIn("facebook", {
+            callbackUrl: process.env.NEXTAUTH_URL || "http://localhost:3000",
+          })
+        }
       >
         Sign in with Facebook
       </button>
