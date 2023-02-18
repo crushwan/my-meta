@@ -14,9 +14,9 @@ export const authOptions = {
     })
   ],
   secret: process.env.NEXTAUTH_SECRET!,
-  app: {
-    signIn: '/auth/signin',
-  },
+  // app: {
+  //   signIn: '/',
+  // },
 
   callbacks: {
     async session({ session, token, user }: any) {
